@@ -21,18 +21,35 @@ public class MathUtility {
     // 0!=1!=1
     // không có giai thừa số âm. Nếu đưa số âm, CHỬi
     // CHỬI: k trả về giá trị gì ca mà NÉM RA NGOẠI LỆ EXCEPTION
-    public static long getFactorial(int n){
+//    public static long getFactorial(int n){
+//        if(n < 0 || n > 20)
+//            throw new IllegalArgumentException("Invalid n. n must between 0...20, plz");
+//        if(n == 0 || n == 1)
+//            return 1;
+//        long product =1 ; // thích nhân dồn khởi động từ 1
+//        for (int i = 2; i <= n; i++) 
+//            product *= i;
+//            
+//        return product;
+//    }  
+        public static long getFactorial(int n){
         if(n < 0 || n > 20)
             throw new IllegalArgumentException("Invalid n. n must between 0...20, plz");
         if(n == 0 || n == 1)
             return 1;
-        long product =1 ; // thích nhân dồn khởi động từ 1
-        for (int i = 2; i <= n; i++) 
-            product *= i;
-            
-        return product;
-    }     
+        return n * getFactorial(n-1);
+        
+        //công thức đệ quy - recursion
+    } 
 }
+// 5! = 1.2.3.4.5 = 4! * 5 = 5*4!
+// 4! = 4 * 3!
+//3!  = 3 * 2!
+// 2! = 2 * 1!
+// 1! = 1 DỪNG Lại
+
+// N! = N * (N-1)!
+//------------------------------------------------------------------------
 // TDD: Test Driven Development: phát triển phần mềm theo phong cách
 // code đến đầu kiểm thử đến đó, viết code và viết test case / test run
 // diễn ra xong xong, đan xen
