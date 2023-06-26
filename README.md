@@ -4,5 +4,5 @@
 ### You will find in this repo...
 * Coming soon...
 ### Screenshots 
-![DDT with Junit](https://github.com/Kindaka/math-util-mvn/blob/main/screenshots/DDT%20Test%20Script.PNG)			<img alt = "" scr=>
+![DDT with Junit](https://github.com/Kindaka/math-util-mvn/blob/main/screenshots/DDT%20Test%20Script.PNG)
 #### Copyright &#169; 2023 Kindaka
